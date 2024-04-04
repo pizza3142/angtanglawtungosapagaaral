@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>WebBook Project</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/read.css'>
+    <script src='javascript/player.js' defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="NavBar">
+		<header>
+            <a class="container" href="index.html"><img src="graphics/Bandiila Logo.png" draggable="false" width="35"></a>
+            <nav>
+                <ul>
+                    <li id="contactList"><a href="contact.html">Contact</a></li>
+                    <li id="aboutList"><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+		</header>
+    </div>
+
+    <!-- Load Audio Files -->
+    <audio src="sounds/sfx/turnpage.mp3" id="turnpage"></audio>
+    <audio src="sounds/sfx/prevturnpage.mp3" id="prevturnpage"></audio>
+    <audio src="sounds/sfx/closebook.mp3" id="closebook"></audio>
+
+    <!-- Load Voice Audio Files (Per Page) -->
+    <audio src="sounds/voices/MAIN AUDIO 1.mp3" id="vocals1"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 2.mp3" id="vocals2"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 3.mp3" id="vocals3"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 4.mp3" id="vocals4"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 5.mp3" id="vocals5"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 6.mp3" id="vocals6"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 7.mp3" id="vocals7"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 8.mp3" id="vocals8"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 9.mp3" id="vocals9"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 10.mp3" id="vocals10"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 11.mp3" id="vocals11"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 12.mp3" id="vocals12"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 13.mp3" id="vocals13"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 14.mp3" id="vocals14"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 15.mp3" id="vocals15"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 16.mp3" id="vocals16"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 17.mp3" id="vocals17"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 18.mp3" id="vocals18"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 19.mp3" id="vocals19"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 20.mp3" id="vocals20"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 21.mp3" id="vocals21"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 22.mp3" id="vocals22"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 23.mp3" id="vocals23"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 24.mp3" id="vocals24"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 25.mp3" id="vocals25"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 26.mp3" id="vocals26"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 27.mp3" id="vocals27"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 28.mp3" id="vocals28"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 29.mp3" id="vocals29"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 30.mp3" id="vocals30"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 31.mp3" id="vocals31"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 32.mp3" id="vocals32"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 33.mp3" id="vocals33"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 34.mp3" id="vocals34"></audio>
+    <audio src="sounds/voices/MAIN AUDIO 35.mp3" id="vocals35"></audio>
+    
+    <!-- Book Player -->
+    <div class="Read">
+        <!-- Previous Page -->
+        <button id="prev" class="prevbutton">
+            <img src="graphics/prev.png" alt="Previous" width="50" draggable="false">
+            <span class="ttPrev">Previous Page</span>
+        </button>
+       
+        <!-- Book Pages -->
+        <div class="book">
+            <!-- Page 1 -->
+            <div id="p1" class="paper">
+                <div class="Front">
+                    <div id="f1" class="frontContent">
+                        <img src="graphics/pages/cover.jpg" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b1" class="backContent">
+                        <img src="graphics/pages/1.jpg" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 2 -->
+            <div id="p2" class="paper">
+                <div class="Front">
+                    <div id="f2" class="frontContent">
+                        <p>Narrator: Once upon a time there was<br>an old mother pig living with her three little kids.</p>
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b2" class="backContent">
+                        <img src="graphics/pages/2.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 3 -->
+            <div id="p3" class="paper">
+                <div class="Front">
+                    <div id="f3" class="frontContent">
+                        <p>Mother Pig: Kids, now that you have grown up,<br>You must seek your fortune for yourself.I can no<br>longer sustain your needs because of my old age.</p>
+                        <br>
+                        <p>Narrator: So, she sent them out into the world to seek their fortunes.</p>
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b3" class="backContent">
+                        <img src="graphics/pages/3.jpg" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 4 -->
+            <div id="p4" class="paper">
+                <div class="Front">
+                    <div id="f4" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b4" class="backContent">
+                        <img src="graphics/pages/4.jpg" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 5 -->
+            <div id="p5" class="paper">
+                <div class="Front">
+                    <div id="f5" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b5" class="backContent">
+                        <img src="graphics/pages/5.jpg" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 6 -->
+            <div id="p6" class="paper">
+                <div class="Front">
+                    <div id="f6" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b6" class="backContent">
+                        <img src="graphics/pages/6.jpg" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 7 -->
+            <div id="p7" class="paper">
+                <div class="Front">
+                    <div id="f7" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b7" class="backContent">
+                        <img src="graphics/pages/7.jpg" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 8 -->
+            <div id="p8" class="paper">
+                <div class="Front">
+                    <div id="f8" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b8" class="backContent">
+                        <img src="graphics/pages/8.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 9 -->
+            <div id="p9" class="paper">
+                <div class="Front">
+                    <div id="f9" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b9" class="backContent">
+                        <img src="graphics/pages/9.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 10 -->
+            <div id="p10" class="paper">
+                <div class="Front">
+                    <div id="f10" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b10" class="backContent">
+                        <img src="graphics/pages/10.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 11 -->
+            <div id="p11" class="paper">
+                <div class="Front">
+                    <div id="f11" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b11" class="backContent">
+                        <img src="graphics/pages/11.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 12 -->
+            <div id="p12" class="paper">
+                <div class="Front">
+                    <div id="f12" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b12" class="backContent">
+                        <img src="graphics/pages/12.jpg" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 13 -->
+            <div id="p13" class="paper">
+                <div class="Front">
+                    <div id="f13" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b13" class="backContent">
+                        <img src="graphics/pages/13.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 14 -->
+            <div id="p14" class="paper">
+                <div class="Front">
+                    <div id="f14" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b14" class="backContent">
+                        <img src="graphics/pages/14.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 15 -->
+            <div id="p15" class="paper">
+                <div class="Front">
+                    <div id="f15" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b15" class="backContent">
+                        <img src="graphics/pages/15.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 16 -->
+            <div id="p16" class="paper">
+                <div class="Front">
+                    <div id="f16" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b16" class="backContent">
+                        <img src="graphics/pages/16.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 17 -->
+            <div id="p17" class="paper">
+                <div class="Front">
+                    <div id="f17" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b17" class="backContent">
+                        <img src="graphics/pages/17.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 18 -->
+            <div id="p18" class="paper">
+                <div class="Front">
+                    <div id="f18" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b18" class="backContent">
+                        <img src="graphics/pages/18.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+
+			<!-- Page 19 -->
+            <div id="p19" class="paper">
+                <div class="Front">
+                    <div id="f19" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b19" class="backContent">
+                        <img src="graphics/pages/19.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 20 -->
+            <div id="p20" class="paper">
+                <div class="Front">
+                    <div id="f20" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b20" class="backContent">
+                        <img src="graphics/pages/20.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 21 -->
+            <div id="p21" class="paper">
+                <div class="Front">
+                    <div id="f21" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b21" class="backContent">
+                        <img src="graphics/pages/21.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 22 -->
+            <div id="p22" class="paper">
+                <div class="Front">
+                    <div id="f22" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b22" class="backContent">
+                        <img src="graphics/pages/22.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 23 -->
+            <div id="p23" class="paper">
+                <div class="Front">
+                    <div id="f23" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b23" class="backContent">
+                        <img src="graphics/pages/23.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+
+			<!-- Page 24 -->
+            <div id="p24" class="paper">
+                <div class="Front">
+                    <div id="f24" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b24" class="backContent">
+                        <img src="graphics/pages/24.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 25 -->
+            <div id="p25" class="paper">
+                <div class="Front">
+                    <div id="f25" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b25" class="backContent">
+                        <img src="graphics/pages/25.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 26 -->
+            <div id="p26" class="paper">
+                <div class="Front">
+                    <div id="f26" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b26" class="backContent">
+                        <img src="graphics/pages/26.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 27 -->
+            <div id="p27" class="paper">
+                <div class="Front">
+                    <div id="f27" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b27" class="backContent">
+                        <img src="graphics/pages/27.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 28 -->
+            <div id="p28" class="paper">
+                <div class="Front">
+                    <div id="f28" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b28" class="backContent">
+                        <img src="graphics/pages/28.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 29 -->
+            <div id="p29" class="paper">
+                <div class="Front">
+                    <div id="f29" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b29" class="backContent">
+                        <img src="graphics/pages/29.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 30 -->
+            <div id="p30" class="paper">
+                <div class="Front">
+                    <div id="f30" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b30" class="backContent">
+                        <img src="graphics/pages/30.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 31 -->
+            <div id="p31" class="paper">
+                <div class="Front">
+                    <div id="f31" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b31" class="backContent">
+                        <img src="graphics/pages/31.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 32 -->
+            <div id="p32" class="paper">
+                <div class="Front">
+                    <div id="f32" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b32" class="backContent">
+                        <img src="graphics/pages/32.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 33 -->
+            <div id="p33" class="paper">
+                <div class="Front">
+                    <div id="f33" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b33" class="backContent">
+                        <img src="graphics/pages/33.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 34 -->
+            <div id="p34" class="paper">
+                <div class="Front">
+                    <div id="f34" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b34" class="backContent">
+                        <img src="graphics/pages/34.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Page 35 -->
+            <div id="p35" class="paper">
+                <div class="Front">
+                    <div id="f35" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b35" class="backContent">
+                        <img src="graphics/pages/35.png" width="100%" height="100%" draggable="false">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Page 36 -->
+            <div id="p36" class="paper">
+                <div class="Front">
+                    <div id="f36" class="frontContent">
+                    </div>
+                </div>
+                <div class="Back">
+                    <div id="b36" class="backContent">
+                        <a href="activities.html"><h1>Answer Questions!</h1></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Next Page -->
+        <button id="next" class="nextbutton">
+            <img src="graphics/next.png" alt="Previous" width="50" draggable="false">
+            <span class="ttNext">Next Page</span>
+        </button>
+    </div>
+
+    <!-- Volume Dialog -->
+    <dialog id="vDlg" open>
+        <div class="slidecontainer">
+            <p>Main Volume: <span id="demo"></span></p>
+            <input type="range" min="0" max="100" value="100" class="slider" id="myRange">
+        </div>
+    </dialog>
+
+    <!-- Page Dialog -->
+    <dialog id="pDlg" open>
+        <div class="pageDlgContent">
+            <h1 id="PagesName">Pages</h1>
+            <hr width="100%" size="2" color="white" noshade>
+            <div class="pageDisp" id="pageDispId">
+                <button id="pageDisp1_ID" class="pageDisp1 classPageDisp"><img src="graphics/pages/1.jpg" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp2_ID" class="pageDisp2 classPageDisp"><img src="graphics/pages/2.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp3_ID" class="pageDisp3 classPageDisp"><img src="graphics/pages/3.jpg" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp4_ID" class="pageDisp4 classPageDisp"><img src="graphics/pages/4.jpg" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp5_ID" class="pageDisp5 classPageDisp"><img src="graphics/pages/5.jpg" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp6_ID" class="pageDisp6 classPageDisp"><img src="graphics/pages/6.jpg" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp7_ID" class="pageDisp7 classPageDisp"><img src="graphics/pages/7.jpg" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp8_ID" class="pageDisp8 classPageDisp"><img src="graphics/pages/8.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp9_ID" class="pageDisp9 classPageDisp"><img src="graphics/pages/9.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp10_ID" class="pageDisp10 classPageDisp"><img src="graphics/pages/10.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp11_ID" class="pageDisp11 classPageDisp"><img src="graphics/pages/11.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp12_ID" class="pageDisp12 classPageDisp"><img src="graphics/pages/12.jpg" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp13_ID" class="pageDisp13 classPageDisp"><img src="graphics/pages/13.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp14_ID" class="pageDisp14 classPageDisp"><img src="graphics/pages/14.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp15_ID" class="pageDisp15 classPageDisp"><img src="graphics/pages/15.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp16_ID" class="pageDisp16 classPageDisp"><img src="graphics/pages/16.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp17_ID" class="pageDisp17 classPageDisp"><img src="graphics/pages/17.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp18_ID" class="pageDisp18 classPageDisp"><img src="graphics/pages/18.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp19_ID" class="pageDisp19 classPageDisp"><img src="graphics/pages/19.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp20_ID" class="pageDisp20 classPageDisp"><img src="graphics/pages/20.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp21_ID" class="pageDisp21 classPageDisp"><img src="graphics/pages/21.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp22_ID" class="pageDisp22 classPageDisp"><img src="graphics/pages/22.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp23_ID" class="pageDisp23 classPageDisp"><img src="graphics/pages/23.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp24_ID" class="pageDisp24 classPageDisp"><img src="graphics/pages/24.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp25_ID" class="pageDisp25 classPageDisp"><img src="graphics/pages/25.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp26_ID" class="pageDisp26 classPageDisp"><img src="graphics/pages/26.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp27_ID" class="pageDisp27 classPageDisp"><img src="graphics/pages/27.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp28_ID" class="pageDisp28 classPageDisp"><img src="graphics/pages/28.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp29_ID" class="pageDisp29 classPageDisp"><img src="graphics/pages/29.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp30_ID" class="pageDisp30 classPageDisp"><img src="graphics/pages/30.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp31_ID" class="pageDisp31 classPageDisp"><img src="graphics/pages/31.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp32_ID" class="pageDisp32 classPageDisp"><img src="graphics/pages/32.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp33_ID" class="pageDisp33 classPageDisp"><img src="graphics/pages/33.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp34_ID" class="pageDisp34 classPageDisp"><img src="graphics/pages/34.png" width="100%" height="100%" draggable="false"></button>
+                <button id="pageDisp35_ID" class="pageDisp35 classPageDisp"><img src="graphics/pages/35.png" width="100%" height="100%" draggable="false"></button>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Settings in below -->
+    <footer>
+        <div class="SettingsButton">
+            <button id="GotoPages">
+                <img src="graphics/book.png" draggable="false">
+                <span class="ttPages">Find Pages</span>
+            </button>
+            <button id="PlayPause">
+                <img id="imgPlayPause" src="graphics/play.png" draggable="false">
+                <span class="ttPlayPause">Play/Pause</span>
+            </button>
+            <button id="Volume">
+                <img id="imgVolume" src="graphics/volume-100%.png" draggable="false">
+                <span id="idVol" class="ttVolume">Volume</span>
+            </button>
+        </div>
+    </footer>
+</body>
+</html>
